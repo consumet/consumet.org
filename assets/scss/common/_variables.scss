@@ -85,7 +85,7 @@ $container-max-widths: (
   xxl: 1320px,
 );
 
-@include _assert-ascending($container-max-widths, '$container-max-widths');
+// @include _assert-ascending($container-max-widths, '$container-max-widths');
 
 // Grid columns
 //

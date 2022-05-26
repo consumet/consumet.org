@@ -1,1 +1,2 @@
-canonifyURLs = false
+baseUrl = "https://www.consumet.org"
+canonifyURLs = true

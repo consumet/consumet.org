@@ -6,6 +6,9 @@
 <div class="sticky-lg-top">
 {{ end -}}
 
+{{ $sass := resources.Get "../assets/scss/layouts/_header.scss" }}
+{{ $style := $sass | resources.ToCSS }}
+
 <div class="header-bar"></div>
 
 <header class="navbar navbar-expand-md navbar-light doks-navbar">

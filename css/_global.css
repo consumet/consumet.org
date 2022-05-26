@@ -1,0 +1,17 @@
+/* Error: Undefined variable.
+ *    ,
+ * 32 |   border-bottom: 1px solid $gray-300;
+ *    |                            ^^^^^^^^^
+ *    '
+ *   assets/scss/common/_global.scss 32:28  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 32 \2502    border-bottom: 1px solid $gray-300;\a    \2502                             ^^^^^^^^^\a    \2575 \a   assets/scss/common/_global.scss 32:28  root stylesheet";
+}

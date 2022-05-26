@@ -1,0 +1,17 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 88 | @include _assert-ascending($container-max-widths, '$container-max-widths');
+ *    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   assets/scss/common/_variables.scss 88:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 88 \2502  @include _assert-ascending($container-max-widths, '$container-max-widths');\a    \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   assets/scss/common/_variables.scss 88:1  root stylesheet";
+}

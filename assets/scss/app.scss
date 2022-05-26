@@ -1,14 +1,14 @@
 /** Import Bootstrap functions */
-//@import "bootstrap/scss/functions";
+@import 'bootstrap/scss/functions';
 
 /** Import theme variables */
 @import 'common/variables';
 
 /** Import Bootstrap */
-// @import "bootstrap/scss/bootstrap";
+@import 'bootstrap/scss/bootstrap';
 
 /** Import highlight.js */
-// @import "highlight.js/scss/github-dark-dimmed";
+@import 'highlight.js/scss/github-dark-dimmed';
 
 /** Import KaTeX */
 @import 'katex/dist/katex';

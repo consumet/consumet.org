@@ -19,15 +19,18 @@ disableLanguages = ["de", "nl"]
 home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
 section = ["HTML", "RSS", "SITEMAP"]
 
+[mediaTypes."text/netlify"]
 suffixes = [""]
 delimiter = ""
 
 [outputFormats.REDIRECTS]
+mediaType = "text/netlify"
 baseName = "_redirects"
 isPlainText = true
 notAlternative = true
 
 [outputFormats.HEADERS]
+mediaType = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true

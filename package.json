@@ -17,7 +17,7 @@
     "init": "shx rm -rf .git && git init -b main",
     "create": "exec-bin node_modules/.bin/hugo/hugo new",
     "prestart": "npm run clean",
-    "start": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender",
+    "start": "hugo server --bind=0.0.0.0 --disableFastRender",
     "prebuild": "npm run clean",
     "runthis": "sass ./assets/scss/common/_variables.scss:./public/css/_variables.css ./assets/scss/common/_global.scss:./public/css/_global.css ./assets/scss/common/_fonts.scss:./public/css/_fonts.css ./assets/scss/common/_dark.scss:./public/css/_dark.css ./assets/scss/layouts/_footer.scss:./public/css/_footer.css ./assets/scss/layouts/_header.scss:./public/css/_header.css ./assets/scss/layouts/_pages.scss:./public/css/_pages.css ./assets/scss/layouts/_posts.scss:./public/css/_posts.css ./assets/scss/layouts/_sidebar.scss:./public/css/_sidebar.css ./assets/scss/app.scss:./public/css/app.css",
     "runthistoo": "sass ./assets/scss:./css",

@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="row flex-xl-nowrap">
+    <div class="col-lg-5 col-xl-3 d-lg-block">
+    </div>
+    {{ if ne .Params.toc false -}}
+    <nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+        {{ partial "sidebar/docs-toc.html" . }}
+    </nav>
+    {{ end -}} {{ if .Params.toc -}}
+    <main class="docs-content col-lg-11 col-xl{{ if eq .Site.Params.options.fullWidth false }}-9{{ end }}">
+        {{ else -}}
+        <main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+            {{ end -}}
+            <h1>{{ .Title }}</h1>
+            <p class="lead">{{ .Params.lead | safeHTML }}</p> {{ .Content }}
+            <div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+                {{ if .Site.Params.lastMod -}} {{ partial "main/last-modified.html" . }} {{ end -}} {{ if .Site.Params.editPage -}} {{ partial "main/edit-page.html" . }} {{ end -}}
+            </div>
+            {{ partial "main/docs-navigation.html" . }}
+        </main>
+</div>
+{{ end }}

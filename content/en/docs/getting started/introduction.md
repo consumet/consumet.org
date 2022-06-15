@@ -1,31 +1,30 @@
 ---
 title: "Introduction"
-description: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-lead: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description: "Consumet provides an APIs for accessing information and links for various entertertainments like movies, books, anime, etc."
+lead: "Consumet provides an APIs for accessing information and links for various entertertainments like movies, books, anime, etc."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
 images: []
 menu:
   docs:
-    parent: "prologue"
+    parent: "getting started"
 weight: 100
 toc: true
 ---
 
 ## Get started
 
-There are two main ways to get started with Doks:
+There are two main ways to get started with Consumet:
+
+* API
+* Nodejs Package
 
 ### Tutorial
-
-{{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." />}}
 
 Step-by-step instructions on how to start a new Doks project. [Tutorial →](https://getdoks.org/tutorial/introduction/)
 
 ### Quick Start
-
-{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." />}}
 
 One page summary of how to start a new Doks project. [Quick Start →]({{< relref "quick-start" >}})
 
@@ -51,8 +50,8 @@ See what others have build with Doks. [Showcase →](https://getdoks.org/showcas
 
 ## Contributing
 
-Find out how to contribute to Doks. [Contributing →](https://getdoks.org/docs/contributing/how-to-contribute/)
+Find out how to contribute to Consumet. [Contributing →]({{< relref "how-to-contribute" >}})
 
 ## Help
 
-Get help on Doks. [Help →]({{< relref "how-to-update" >}})
+Get help on Consumet. [Help →]({{< relref "how-to-update" >}})

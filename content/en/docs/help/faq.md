@@ -13,38 +13,15 @@ weight: 630
 toc: true
 ---
 
-## Hyas?
 
-Doks is a [Hyas theme](https://gethyas.com/themes/) build by the creator of Hyas.
-
-## Footer notice?
-
-Please keep it in place.
-
-## Keyboard shortcuts for search?
-
-- focus: `Ctrl + /`
-- select: `↓` and `↑`
-- open: `Enter`
-- close: `Esc`
-
-## Other documentation?
-
-- [Netlify](https://docs.netlify.com/)
-- [Hugo](https://gohugo.io/documentation/)
+## How do i request a new provider?
+Open an issue on [GitHub](https://github.com/consumet/extentions/issues) with the label `Provider Request`, and the name of the provider next to it, as well as the link to the provider in the body paragraph.
 
 ## Can I get support?
 
-Create a topic:
+Create a new issue on [GitHub](https://github.com/consumet/extentions/issues).
 
-- [Netlify Community](https://community.netlify.com/)
-- [Hugo Forums](https://discourse.gohugo.io/)
-- [Doks Discussions](https://github.com/h-enk/doks/discussions)
 
-## Contact the creator?
+## Need more help?
 
-Send `h-enk` a message:
-
-- [Netlify Community](https://community.netlify.com/)
-- [Hugo Forums](https://discourse.gohugo.io/)
-- [Doks Discussions](https://github.com/h-enk/doks/discussions)
+Join the [Discord server](#todo) and send a message to the `#help` channel.

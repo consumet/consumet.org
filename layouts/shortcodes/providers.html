@@ -1,0 +1,76 @@
+<div class="providers-list flex-md-nowrap">
+    {{ $url := .Get "url" }} {{ range $p, $d := getJSON $url }} {{ if ne $p 5 }} {{ range $k, $v := $d }}
+    <a id="{{$k}}" class="link-unstyled h4" href="#{{$k}}"><strong >
+        {{ replace $k "_" " " | humanize }}
+    </strong>
+    </a> <br>
+    <ul class="row mb-4">
+        {{ range $v }}
+        <div class="provider row mt-2">
+            <div class="container w-auto d-inline-block">
+                <img src="{{if or (eq .logo `undefined`) (eq .logo ``)}}/images/vendor/404-img.png{{else}}{{.logo}}{{end}}" class="provider-img rounded p-0" width="52" height="52">
+                <div class="top-left d-inline-block " tabindex="0 " role="tooltip" data-toggle="tooltip" title="{{if not .isWorking }}Not Working{{else}}Working{{end}}">
+                    {{if not .isWorking }}🔴{{else}}🟢{{end}}
+                </div>
+            </div>
+            <div class="col mb-2 ps-3 w-auto">
+                <a href="{{ .baseUrl }}" target="_blank">{{.name}}</a>
+                <span class="text-muted form-control-sm m-0 p-1">{{.classPath}}</span>
+                <br> Language(s): {{$type := (printf "%T" .lang)}} {{if eq $type "[]interface {}"}} {{$len := (len .lang)}} {{range $i, $l := .lang}} {{if eq (add $i 1) $len}} {{$l}}. {{else}} {{$l}}, {{end}} {{end}} {{else}} {{ .lang }} {{end}}
+            </div>
+            <!-- <a class="w-auto text-decoration-none " href=" ">docs ></a> -->
+        </div>
+        <br> {{ end }} {{ end }}
+    </ul>
+    {{ end }} {{ end }}
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    $(() => {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+</script>
+<style>
+    .tooltip.show {
+        opacity: 1;
+    }
+    
+    .tooltip-inner {
+        background-color: #60cdff;
+        box-shadow: 0px 0px 4px black;
+        opacity: 1 !important;
+        color: black;
+    }
+    
+    .container {
+        position: relative;
+        color: white;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    .link-unstyled,
+    .link-unstyled:focus,
+    .link-unstyled:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    .provider-img {
+        margin-top: 2px;
+        object-fit: cover;
+        object-position: center;
+        background-color: azure;
+        border-color: #60cdff;
+        border-style: solid;
+        border-width: 1px;
+    }
+    
+    .top-left {
+        position: absolute;
+        top: -9px;
+        left: -10px;
+        animation: true;
+        pointer-events: auto;
+    }
+</style>

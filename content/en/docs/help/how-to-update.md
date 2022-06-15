@@ -1,7 +1,7 @@
 ---
 title: "How to Update"
-description: "Regularly update the installed npm packages to keep your Doks website stable, usable, and secure."
-lead: "Regularly update the installed npm packages to keep your Doks website stable, usable, and secure."
+description: "Regularly update Consumet extenstions npm package to keep your providers stable, and usable."
+lead: "Regularly update Consumet extenstions npm package to keep your providers stable, and usable."
 date: 2020-11-12T13:26:54+01:00
 lastmod: 2020-11-12T13:26:54+01:00
 draft: false
@@ -13,20 +13,20 @@ weight: 610
 toc: true
 ---
 
-{{< alert icon="💡" text="Learn more about <a href=\"https://docs.npmjs.com/about-semantic-versioning\">semantic versioning</a> and <a href=\"https://docs.npmjs.com/cli/v6/using-npm/semver#advanced-range-syntax\">advanced range syntax</a>." />}}
+<!-- {{< alert icon="💡" text="Learn more about <a href=\"https://docs.npmjs.com/about-semantic-versioning\">semantic versioning</a> and <a href=\"https://docs.npmjs.com/cli/v6/using-npm/semver#advanced-range-syntax\">advanced range syntax</a>." />}} -->
 
-## Check for outdated packages
+## Check if Consumet extensions is up to date
 
-The [`npm outdated`](https://docs.npmjs.com/cli/v7/commands/npm-outdated) command will check the registry to see if any (or, specific) installed packages are currently outdated:
+The [`npm outdated`](https://docs.npmjs.com/cli/v7/commands/npm-outdated) command will check the registry to see if the package is currently outdated:
 
 ```bash
-npm outdated [[<@scope>/]<pkg> ...]
+npm outdated consumet-extensions
 ```
 
-## Update packages
+## Update Consumet extensions
 
-The [`npm update`](https://docs.npmjs.com/cli/v7/commands/npm-update) command will update all the packages listed to the latest version (specified by the tag config), respecting semver:
+The [`npm update`](https://docs.npmjs.com/cli/v7/commands/npm-update) command will update all the package:
 
 ```bash
-npm update [<pkg>...]
+npm update consumet-extensions
 ```

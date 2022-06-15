@@ -21,10 +21,3 @@ Delete the `./node_modules` folder, and run again:
 npm install
 ```
 
-## Problems with cache
-
-Delete the temporary directories:
-
-```bash
-npm run clean
-```

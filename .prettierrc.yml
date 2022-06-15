@@ -1,0 +1,8 @@
+parser: 'html';
+useTabs: false;
+tabWidth: 2;
+singleQuote: true;
+printWidth: 100;
+bracketSpacing: true;
+semi: true;
+endOfLine: 'lf';

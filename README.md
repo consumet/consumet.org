@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/90208825-e505-4c9c-b802-3dede05599a5/deploy-status)](https://app.netlify.com/sites/resilient-pudding-82d380/deploys)

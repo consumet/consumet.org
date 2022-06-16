@@ -21,7 +21,6 @@ Open an issue on [GitHub](https://github.com/consumet/extentions/issues) with th
 
 Create a new issue on [GitHub](https://github.com/consumet/extentions/issues).
 
-
 ## Need more help?
 
 Join the [Discord server](#todo) and send a message to the `#help` channel.

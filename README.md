@@ -39,3 +39,8 @@ npm install
 ```bash
 npm run start
 ```
+
+## Other repositories
+ - [Extensions](https://github.com/consumet/extensions)
+ - [API](https://github.com/consumet/api)
+ - [Providers Status](https://github.com/consumet/providers-status)

@@ -2,7 +2,7 @@
 
 // Source: https://material.io/design/color/dark-theme.html
 
-$body-bg-dark: $gray-900;
+$body-bg-dark: $gray-999;
 $body-overlay-dark: darken($body-bg-dark, 2.5%);
 
 /*
@@ -12,7 +12,7 @@ $border-dark: $gray-800;
 $body-color-dark: $gray-300;
 $dots-dark: darken($body-color-dark, 50%);
 
-$link-color-dark: $blue-300;
+$link-color-dark: $blue-900;
 $button-color-dark: $link-color-dark;
 $focus-color-dark: lighten($link-color-dark, 2.5%);
 
@@ -83,7 +83,7 @@ $navbar-dark-active-color:          $link-color-dark;
 
 [data-dark-mode] body .navbar,
 [data-dark-mode] body .doks-subnavbar {
-  background-color: rgba(33, 37, 41, 0.95);
+  background-color: $gray-999;
   border-bottom: 1px solid $border-dark;
 }
 

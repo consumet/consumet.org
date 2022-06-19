@@ -42,19 +42,16 @@ siteLinksSearchBox = false
 themeColor = "#fff"
 
 ## TODO
-# Images
-## quality = 85
-## bgColor = "#fff"
-## landscapePhotoWidths = [900, 800, 700, 600, 500]
-## portraitPhotoWidths = [800, 700, 600, 500]
-## lqipWidth = "20x"
-## smallLimit = "300"
-
-# Footer
-footer = "Powered by <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.netlify.com\">Netlify</a>, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://gohugo.io/\">Hugo</a>, and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://getdoks.org/\">Doks</a>"
+[Images]
+  quality = 85
+  bgColor = "#fff"
+  landscapePhotoWidths = [900, 800, 700, 600, 500]
+  portraitPhotoWidths = [800, 700, 600, 500]
+  lqipWidth = "20x"
+  smallLimit = "300"
 
 # Feed
-copyRight = "Copyright (c) 2022-2023 Consumet"
+copyRight = "Copyright (c) 2022 Consumet"
 
 # Alert
 alert = false

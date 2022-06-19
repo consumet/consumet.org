@@ -10,8 +10,10 @@
 }
 
 .content img {
-  max-width: 100%;
+  max-width: 40%;
+  margin-left: 50px;
 }
+
 
 h1,
 h2,
@@ -212,7 +214,7 @@ body {
 }
 
 ::selection {
-  background: rgba(212, 53, 159, 0.2);
+  background: rgba(0, 233, 182, 0.2);
 }
 
 .bg-dots {

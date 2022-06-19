@@ -1,0 +1,25 @@
+name: Bug Report
+description: File a bug report
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees:
+  - riimuru
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Brief explanation of the feature.
+      placeholder: "Describe the feature..."
+    
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      description: Include basic example or links here.
+
+  - type: input
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why are you creating this feature? What cases does it support? What is the expected behavior?

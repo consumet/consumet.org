@@ -106,7 +106,7 @@ src/
 2. Import the abstract class from the `src/models/<category>-parser.ts` file. if you are writing an anime provider, you would need to implement the abstract class `AnimeParser`, which is defined in the `src/models/anime-parser.ts` file.
 3. Start writing your provider code.
 4. Add the provider to the `src/providers/<category>/<lang>/index.ts` file.
-5. Make a [Pull Request](https://github.com/consumet/extentions/pulls) of the changes.
+5. Make a [Pull Request](https://github.com/consumet/extensions/pulls) of the changes.
 
 ## Contribute to documentation
 {{<alert icon="👉" text="The documentation live in <a href='https://github.com/consumet/website/tree/master/content/en/docs/' style='text-decoration: none;'> `./content/en/docs/` </a> of the <a href='https://github.com/consumet/website' style='text-decoration: none;'> `website` repository </a>" />}}

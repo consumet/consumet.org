@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://consumet.org/">
-    <img alt="Consumet" src="./assets/images/logo.png" width="150">
+    <img alt="Consumet" src="./static/images/vendor/logo.png" width="150">
   </a>
 </p>
 

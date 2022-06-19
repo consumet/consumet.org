@@ -13,7 +13,7 @@
                     {{if not .isWorking }}🔴{{else}}🟢{{end}}
                 </div>
             </div>
-            <div class="col mb-2 ps-3 w-auto">
+            <div class="provider-data col mb-2 ps-3 w-auto">
                 <a href="{{ .baseUrl }}" target="_blank">{{.name}}</a>
                 <span class="text-muted form-control-sm m-0 p-1">{{.classPath}}</span>
                 <br> Language(s): {{$type := (printf "%T" .lang)}} {{if eq $type "[]interface {}"}} {{$len := (len .lang)}} {{range $i, $l := .lang}} {{if eq (add $i 1) $len}} {{$l}}. {{else}} {{$l}}, {{end}} {{end}} {{else}} {{ .lang }} {{end}}
@@ -72,5 +72,35 @@
         left: -10px;
         animation: true;
         pointer-events: auto;
+    }
+    
+    @media only screen and (max-width: 1200px) {
+        .provider-img {
+            width: 40px;
+            height: 40px;
+        }
+        .provider-data {
+            font-size: 0.8rem;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .provider-img {
+            width: 30px;
+            height: 30px;
+        }
+        .provider-data {
+            font-size: 0.7rem;
+        }
+    }
+    
+    @media only screen and (max-width: 425px) {
+        .provider-img {
+            width: 20px;
+            height: 20px;
+        }
+        .provider-data {
+            font-size: 0.6rem;
+        }
     }
 </style>

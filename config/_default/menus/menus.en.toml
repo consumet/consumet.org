@@ -16,7 +16,7 @@
 [[main]]
   name = "Community"
   url = "https://github.com/consumet/consumet.org/discussions"
-  weight = 20
+  weight = 21
 
 [[social]]
   name = "GitHub"

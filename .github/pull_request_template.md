@@ -12,7 +12,6 @@ Why are we doing this? What use cases does it support? What is the expected outc
 
 ## Checks
 
-- [ ] Read [Create a Pull Request](https://consumet.org/docs/contributing/how-to-contribute/#create-a-pull-request)
 - [ ] Supports all screen sizes (if relevant)
 - [ ] Supports both light and dark mode (if relevant)
 - [ ] Passes `npm run test`

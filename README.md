@@ -12,13 +12,13 @@
 </p>
 <p align="center">
   <a href="https://github.com/consumet/consumet.org/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/consumet/consumet.org?style=flat-square" alt="GitHub">
+    <img src="https://img.shields.io/github/license/consumet/consumet.org" alt="GitHub">
   </a>
   <a href="https://app.netlify.com/sites/resilient-pudding-82d380/deploys">
-    <img src="https://img.shields.io/netlify/8a1009d5-88ac-413e-96ef-3f928674a083?style=flat-square" alt="Netlify">
+    <img src="https://img.shields.io/netlify/8a1009d5-88ac-413e-96ef-3f928674a083" alt="Netlify">
   </a>
     <a href="https://discord.gg/qTPfvMxzNH">
-    <img src="https://img.shields.io/discord/987492554486452315.svg?label=discord&labelColor=7289da&color=2c2f33&style=flat" alt="Discord">
+    <img src="https://img.shields.io/discord/987492554486452315.svg?label=discord&labelColor=7289da&color=2c2f33" alt="Discord">
   </a>
 </p>
 

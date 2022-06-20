@@ -1,5 +1,5 @@
 ---
-title: 'NPM Package'
+title: 'Installation'
 description: 'Consumet extensions npm package'
 lead: 'Consumet extensions npm package'
 date: 2020-11-16T13:59:39+01:00
@@ -10,7 +10,6 @@ menu:
   docs:
     parent: "overview"
 weight: 110
-toc: true
 ---
 
 ## Requirements
@@ -24,11 +23,11 @@ Consumet Extensions uses npm (included with Node.js) to centralize dependency ma
 ## Installation
 To install Consumet Extensions, run the following command:
 ```bash
-npm install consumet-extensions
+npm install @consumet/extensions
 ```
 or if you have yarn installed, run the following command:
 ```bash
-yarn add consumet-extensions
+yarn add @consumet/extensions
 ```
 
 ## Usage

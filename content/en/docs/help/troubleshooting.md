@@ -18,6 +18,7 @@ toc: true
 Delete the `./node_modules` folder, and run again:
 
 ```bash
-npm install
+npm install 
+    # or yarn install
 ```
 

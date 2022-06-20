@@ -19,7 +19,7 @@ There are two main ways to get started with Consumet:
 
 #### 1. Using the Consumet Extensions npm package
 {{<alert icon="👉" text="The is intended to Nodejs users." />}}
-Step-by-step instructions on how to start using Consumet extensions library. [Tutorial→]({{< relref "npm-package" >}})
+Step-by-step instructions on how to start using Consumet extensions library. [Tutorial→]({{< relref "installation" >}})
 
 #### 2. Using the Consumet API
 {{<alert icon="👉" text="The is intended to all users." />}}

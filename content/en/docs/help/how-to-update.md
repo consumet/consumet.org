@@ -19,14 +19,24 @@ toc: true
 
 The [`npm outdated`](https://docs.npmjs.com/cli/v7/commands/npm-outdated) command will check the registry to see if the package is currently outdated:
 
+**npm:**
 ```bash
-npm outdated consumet-extensions
+npm outdated @consumet/extensions
+```
+**yarn:**
+```bash
+yarn outdated @consumet/extensions
 ```
 
 ## Update Consumet extensions
 
 The [`npm update`](https://docs.npmjs.com/cli/v7/commands/npm-update) command will update all the package:
 
+**npm:**
 ```bash
-npm update consumet-extensions
+npm update @consumet/extensions
+```
+**yarn:**
+```bash
+yarn upgrade @consumet/extensions --latest
 ```

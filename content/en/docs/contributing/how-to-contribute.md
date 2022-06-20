@@ -10,7 +10,6 @@ menu:
   docs:
     parent: "contributing"
 weight: 110
-toc: true
 mermaid: true
 ---
 
@@ -19,14 +18,24 @@ This guide is for the people who are interested Contributing to code, improve do
 ## Contribute to code
 {{<alert icon="👉" text="The consumet code lives in the <a href='https://github.com/consumet/extensions' style='text-decoration: none;'> `extensions` repository </a>" />}}
 
-### Getting Started
+### Prerequisites
+To contribute to Consumet code, you need to have knowledge of the following technologies.
+   - [Nodejs](https://nodejs.org/)
+   - [TypeScript](https://www.typescriptlang.org/)
+   - Web scraping
+       - [Cheerio](https://cheerio.js.org/)
+       - [Axios](https://axios-http.com/docs/example)
+       - [Css Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+       - [DevTools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
+
+#### Cloning the repository
 1. Clone the repository.
 ```bash
 git clone https://github.com/consumet/extensions.git
 ```
-2. Install dependencies.
+1. Install dependencies. **Using Yarn**.
 ```bash
-yarn install # or "npm install"
+yarn install
 ```
 3. create a new branch using the name of the provider (source) you want to add.
 ```bash
@@ -84,7 +93,6 @@ classDiagram
 
 #### Project structure
 ***\<category>*** is the category of the provider. For example, `anime` or `book`, `etc`.\
-***\<lang>*** is the language of the provider. For example, `en` or `jp`, `etc`.\
 ***\<provider-name>*** is the name of the provider. For example, `libgen` or `gogoanime`, `etc`. (must be in camel case)
 
 
@@ -95,17 +103,15 @@ src/
 ├── providers
 │   ├── <category>
 │   │   ├── index.ts
-│   │   ├── <lang>
-│   │   │   ├── index.ts
-│   │   │   └── <provider-name>.ts
+│   │   └── <provider-name>.ts
 │   └── <category>
 └── utils
 ```
 #### Setting up the provider
-1. Create a new file in the `src/providers/<category>/<lang>/<provider-name>.ts` folder.
+1. Create a new file in the `src/providers/<category>/<provider-name>.ts` folder.
 2. Import the abstract class from the `src/models/<category>-parser.ts` file. if you are writing an anime provider, you would need to implement the abstract class `AnimeParser`, which is defined in the `src/models/anime-parser.ts` file.
 3. Start writing your provider code.
-4. Add the provider to the `src/providers/<category>/<lang>/index.ts` file.
+4. Add the provider to the `src/providers/<category>/index.ts` file.
 5. Make a [Pull Request](https://github.com/consumet/extensions/pulls) of the changes.
 
 ## Contribute to documentation

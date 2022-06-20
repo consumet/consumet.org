@@ -38,9 +38,9 @@ See also the exmaples in the [extensions repository](https://github.com/consumet
 import { ANIME } from "@consumet/extensions"
 
 const searchAnime = async (query) => {
-  const gogoanime = new ANIME.en.GogoAnime()
-  const books = await gogoanime.search(query)
-  console.log(books)
+  const gogoanime = new ANIME.GogoAnime()
+  const anime = await gogoanime.search(query)
+  console.log(anime)
 }
 
 searchAnime("One Piece")

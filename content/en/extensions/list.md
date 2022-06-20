@@ -8,4 +8,4 @@ lastmod: 2020-08-27T19:23:18+02:00
 
 List of available extensions to use on your project.
 
-{{< providers url="static/js/providers.json" >}}
+{{< providers url="https://raw.githubusercontent.com/consumet/providers-status/main/providers-list.json" >}}

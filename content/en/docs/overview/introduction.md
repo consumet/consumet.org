@@ -24,7 +24,7 @@ Step-by-step instructions on how to start using Consumet extensions library. [Tu
 #### 2. Using the Consumet API
 {{<alert icon="👉" text="The is intended to all users." />}}
 
-Step-by-step instructions on how to start using the Consumet API. [Tutorial →]({{< relref "API/../../api/usage.md" >}})
+Step-by-step instructions on how to start using the Consumet API. [Tutorial →]({{< relref "API/../../api/api-refrence.md" >}})
 
 ## Contributing
 

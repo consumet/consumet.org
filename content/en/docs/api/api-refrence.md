@@ -1,5 +1,5 @@
 ---
-title: "Usage"
+title: "API Reference"
 description: "How to use Consumet API."
 lead: "How to use Consumet API."
 date: 2020-10-06T08:48:57+00:00

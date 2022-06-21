@@ -1,10 +1,15 @@
 {{ define "main" }}
+	<h1>Year Boyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</h1>
 	<div class="row flex-xl-nowrap">
 		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
 			<nav {{ if eq .Site.Params.menu.section.collapsibleSidebar false }}id="sidebar-default" {{ end }}class="docs-links" aria-label="Main navigation">
 				{{ partial "sidebar/docs-menu.html" . }}
 			</nav>
+	<h1>Year Boyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</h1>
 		</div>
+		<div>
+		</div>
+	<h1>Year Boyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</h1>
 		{{ if ne .Params.toc false -}}
 		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
 			{{ partial "sidebar/docs-toc.html" . }}
@@ -16,6 +21,7 @@
 		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
 		{{ end -}}
 			{{ if .Site.Params.options.breadCrumb -}}
+	<h1>Year Boyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</h1>
 				<!-- https://discourse.gohugo.io/t/breadcrumb-navigation-for-highly-nested-content/27359/6 -->
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
@@ -25,6 +31,7 @@
 				</nav>
 			{{ end }}
 			<h1>{{ .Title }}</h1>
+	<h1>Year Boyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</h1>
 			<p class="lead">{{ .Params.lead | safeHTML }}</p>
 			{{ if ne .Params.toc false -}}
 			<nav class="d-xl-none" aria-label="Quaternary navigation">
@@ -33,6 +40,7 @@
 			{{ end -}}
 			{{ .Content }}
 			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+	<h1>Year Boyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</h1>
 				{{ if .Site.Params.lastMod -}}
 					{{ partial "main/last-modified.html" . }}
 				{{ end -}}

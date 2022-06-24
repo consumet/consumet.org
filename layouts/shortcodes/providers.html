@@ -8,12 +8,12 @@
         {{ range $v }}
         <div class="provider row mt-2">
             <div class="container w-auto d-inline-block">
-                <img src="{{if or (eq .logo `undefined`) (eq .logo ``)}}/images/vendor/404-img.png{{else}}{{.logo}}{{end}}" class="provider-img rounded p-0" width="52" height="52">
-                <div class="top-left d-inline-block " tabindex="0 " role="tooltip" data-toggle="tooltip" title="{{if not .isWorking }}Not Working{{else}}Working{{end}}">
+                <img src="{{if or (eq .logo `undefined`) (eq .logo ``)}}/images/vendor/404-img.png{{else}}{{.logo}}{{end}}" class="provider-img m-0 mw-100 rounded p-0" width="52" height="52">
+                <div class="top-left d-inline-block " tabindex="0" role="tooltip" data-toggle="tooltip" title="{{if not .isWorking }}Not Working{{else}}Working{{end}}">
                     {{if not .isWorking }}🔴{{else}}🟢{{end}}
                 </div>
             </div>
-            <div class="col mb-2 ps-3 w-auto">
+            <div class="provider-data col w-auto">
                 <a href="{{ .baseUrl }}" target="_blank">{{.name}}</a>
                 <span class="text-muted form-control-sm m-0 p-1">{{.classPath}}</span>
                 <br> Language(s): {{$type := (printf "%T" .lang)}} {{if eq $type "[]interface {}"}} {{$len := (len .lang)}} {{range $i, $l := .lang}} {{if eq (add $i 1) $len}} {{$l}}. {{else}} {{$l}}, {{end}} {{end}} {{else}} {{ .lang }} {{end}}
@@ -72,5 +72,59 @@
         left: -10px;
         animation: true;
         pointer-events: auto;
+    }
+    
+    .provider-data {
+        margin-bottom: 0.125rem;
+        padding-left: 1rem;
+    }
+    
+    @media only screen and (max-width: 1200px) {
+        .provider-img {
+            width: 40px;
+            height: 40px;
+        }
+        .provider-data {
+            font-size: 0.8rem;
+            padding-left: 0.8rem;
+        }
+        .top-left {
+            top: -6px;
+            left: -7px;
+            font-size: 0.8rem;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .provider-img {
+            width: 30px;
+            height: 30px;
+        }
+        .provider-data {
+            font-size: 0.7rem;
+            margin-bottom: 0rem;
+            padding-left: 0.5rem;
+        }
+        .top-left {
+            top: -5px;
+            left: -6px;
+            font-size: 0.7rem;
+        }
+    }
+    
+    @media only screen and (max-width: 425px) {
+        .provider-img {
+            width: 20px;
+            height: 20px;
+        }
+        .provider-data {
+            font-size: 0.6rem;
+            margin-bottom: 0rem;
+        }
+        .top-left {
+            top: -1px;
+            left: -6px;
+            font-size: 0.6rem;
+        }
     }
 </style>

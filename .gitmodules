@@ -1,0 +1,3 @@
+[submodule "docs.consumet.org"]
+	path = docs.consumet.org
+	url = https://github.com/consumet/docs.consumet.org

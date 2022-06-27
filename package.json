@@ -63,7 +63,7 @@
     "postcss": "^8.4",
     "postcss-cli": "^9.1",
     "purgecss-whitelister": "^2.4",
-    "sass-loader": "^13.0.1",
+    "sass-loader": "^13.0.2",
     "shx": "^0.3.4",
     "stylelint": "^14.9",
     "stylelint-config-standard-scss": "^3.0",

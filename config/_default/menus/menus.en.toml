@@ -1,6 +1,6 @@
 [[main]]
   name = "Docs"
-  url = "/docs"
+  url = "https://docs.consumet.org"
   weight = 10
 
 [[main]]

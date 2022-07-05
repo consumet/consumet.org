@@ -1,5 +1,5 @@
 <div class="providers-list flex-md-nowrap">
-    {{ $url := .Get "url" }} {{ range $p, $d := getJSON $url }} {{ if ne $p 5 }} {{ range $k, $v := $d }}
+    {{ $url := .Get "url" }} {{ range $p, $d := getJSON $url }} {{ range $k, $v := $d }} {{ if ne $k "OTHERS" }}
     <a id="{{$k}}" class="link-unstyled h4" href="#{{$k}}"><strong >
         {{ replace $k "_" " " | humanize }}
     </strong>

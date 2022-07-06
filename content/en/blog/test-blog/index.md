@@ -181,7 +181,7 @@ if (numOfComments > 0) console.log(sumOfStars / numOfComments);
 
 The result was 4.03.
 
-You can learn more about querying at [the JQuery documentation](https://api.jquery.com/children/)
+You can learn more about querying at the [JQuery documentation](https://api.jquery.com)
 
 ## Conclusion
 

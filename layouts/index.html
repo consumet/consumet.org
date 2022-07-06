@@ -10,6 +10,29 @@
             <a class="btn btn-primary btn-lg px-4 mb-2" href="https://docs.consumet.org" role="button">Get Started</a
       >
     </div>
+    <div id="sugC" style="margin-top: 25%;">
+      <h2>Suggestions</h2>
+      <form name="suggestions" style="display:flex;flex-direction:column;">
+        <label>
+          <textarea name="message" id="" cols="40" rows="5"></textarea>
+        </label>
+        <button style="width: 10%; margin-top: 25px;" class="btn btn-primary btn-lg px-4 mb-2" role="button">Send</button>
+      </form>
+    </div>
+    <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+    <script>
+      function handleSubmit(e) {
+        e.preventDefault();
+        var data = new FormData(e.target);
+        fetch("https://formspree.io/f/xpzbgdqg", { method: "POST", body: data, headers: { 'Accept': "application/json" } }).then((res) => { if(res.ok){ form[0].reset(); div.innerHTML = "<p>message has been submitted</p>" }
+        })
+      }
+      var div = document.getElementById("sugC")
+      var form = document.getElementsByName("suggestions");
+      form[0].addEventListener("submit", handleSubmit, true);
+    </script>
 </section>
 {{ end }} {{ define "sidebar-footer" }}
 <section class="section section-sm container-fluid">

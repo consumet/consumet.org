@@ -3,11 +3,20 @@ title: 'Getting Started with Scrapping Using Cheerio JS'
 date: 2022-06-29
 weight: 50
 date: 2022-07-05T21:17:42+00:00
-lastmod: 2022-07-05T21:17:42+00:00
+lastmod: 2022-07-18T21:17:42+00:00
 tags: ['tutorial']
 description: 'A complete guide on scraping with Cheerio JS'
 draft: false
 contributors: ['prince-ao']
+---
+
+# Update July 18, 2022
+
+Instead of using a bunch of children as suggested in the querying section, you can use the [find](https://api.jquery.com/find/) function
+```ts
+$(e).find("div.something")
+```
+
 ---
 
 # Introduction

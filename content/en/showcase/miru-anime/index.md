@@ -12,7 +12,7 @@ menu:
     parent: "browse"
 weight: 200
 toc: false
-pinned: false
+pinned: true
 featured: false
 types: ["anime"]
 functionalities: ["watch", "search", "browse"]

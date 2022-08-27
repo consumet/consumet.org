@@ -39,7 +39,7 @@ schemaGitHub = "https://github.com/consumet"
 siteLinksSearchBox = false
 
 ## Chrome Browser
-themeColor = "#fff"
+themeColor = "white"
 
 # Images - Temporarily left in place for backward compatibility
 quality = 85

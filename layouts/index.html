@@ -1,52 +1,52 @@
 {{ define "main" }}
 <section class="section container-fluid mt-n3 pb-3">
     <div class="secx row justify-content-center">
-        <img src="images/consumetlogo.png" alt="Consumet Logo">
-        <div class="col-lg-12 text-center">
-            <h1 class="mt-0">{{ .Title }}</h1>
+        <img src=" images/consumetlogo.png" alt="Consumet Logo" style="max-width: 30%;">
+        <div class="col-lg-12 text-center ">
+            <h1 class="mt-0 ">{{ .Title }}</h1>
         </div>
-        <div class="col-lg-9 col-xl-8 text-center">
-            <p class="lead">Consumet is a search engine APIs for accessing information and links for various entertertainment mediums like movies, books, anime, etc.</p>
-            <a class="btn btn-primary btn-lg px-4 mb-2" href="https://docs.consumet.org" role="button">Get Started</a
+        <div class="col-lg-9 col-xl-8 text-center ">
+            <p class="lead ">Consumet is a search engine APIs for accessing information and links for various entertertainment mediums like movies, books, anime, etc.</p>
+            <a class="btn btn-primary btn-lg px-4 mb-2 " href="https://docs.consumet.org" role="button ">Get Started</a
       >
     </div>
-    <div id="sugC" style="margin-top: 25%;">
+    <div id="sugC " style="margin-top: 25%; ">
       <h2>Suggestion</h2>
-      <form name="suggestions" style="display:flex;flex-direction:column;">
+      <form name="suggestions " style="display:flex;flex-direction:column; ">
         <label>
-          <textarea id="message" name="message" id="" cols="40" rows="5"></textarea>
+          <textarea id="message " name="message " id=" " cols="40 " rows="5 "></textarea>
         </label>
-        <button style="width: 10%; margin-top: 25px;" class="btn btn-primary btn-lg px-4 mb-2" role="button">Send</button>
+        <button style="width: 10%; margin-top: 25px; " class="btn btn-primary btn-lg px-4 mb-2 " role="button ">Send</button>
       </form>
     </div>
     <script>
       function handleSubmit(e) {
         e.preventDefault();
-        const textarea = document.getElementById("message");
-        fetch("https://pfolio-backend.herokuapp.com/send-email", {
-          method: "post",
+        const textarea = document.getElementById("message ");
+        fetch("https://pfolio-backend.herokuapp.com/send-email ", {
+          method: "post ",
           headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            email: "Suggestions@consumet.org",
-            subject: "From consumet.org",
+            email: "Suggestions@consumet.org ",
+            subject: "From consumet.org ",
             body: textarea.value
           })
-        }).catch((err) => window.alert("There was an error sending this message"))
-        textarea.value = ""
-        window.alert("Message sent!\nThank you for your suggestion")
+        }).catch((err) => window.alert("There was an error sending this message "))
+        textarea.value = " "
+        window.alert("Message sent!\nThank you for your suggestion ")
       }
-      var div = document.getElementById("sugC")
-      var form = document.getElementsByName("suggestions");
-      form[0].addEventListener("submit", handleSubmit, true);
+      var div = document.getElementById("sugC ")
+      var form = document.getElementsByName("suggestions ");
+      form[0].addEventListener("submit ", handleSubmit, true);
     </script>
 </section>
-{{ end }} {{ define "sidebar-footer" }}
-<section class="section section-sm container-fluid">
-  <div class="row justify-content-center text-center">
-    <div class="col-lg-9">{{- .Content -}}</div>
+{{ end }} {{ define "sidebar-footer " }}
+<section class="section section-sm container-fluid ">
+  <div class="row justify-content-center text-center ">
+    <div class="col-lg-9 ">{{- .Content -}}</div>
   </div>
 </section>
 {{ end }}

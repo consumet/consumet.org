@@ -4,6 +4,11 @@
   weight = 10
 
 [[main]]
+  name = "Showcase"
+  url = "/showcase/"
+  weight = 20
+
+[[main]]
   name = "Blog"
   url = "/blog/"
   weight = 20
@@ -30,3 +35,13 @@
   weight = 10
   url = "https://github.com/consumet/website"
 
+[[showcase]]
+  name = "Browse"
+  weight = 10
+  identifier = "browse"
+  url = "/showcase/"
+
+[[tertiary]]
+  name = "Submit to Showcase"
+  url = "https://github.com/consumet/consumet-api/discussions?discussions_q=category%3A%22Show+and+tell%22"
+  weight = 10

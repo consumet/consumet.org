@@ -1,7 +1,7 @@
 ---
 title: "Ashanime"
-description: "A simple and easy to use Website for streaming Anime without ads."
-lead: "A simple and easy to use Website for streaming Anime without ads."
+description: "Ashanime is an Ad free responsive web application built with the intention of providing a pleasent anime viewing experience."
+lead: "Ad Free and responsive anime streaming app"
 date: 2022-08-27T19:36:00+00:00
 lastmod: 2022-08-27T19:36:00+00:00
 draft: false

@@ -7,18 +7,13 @@
     </div>
     <main class="docs-content col-lg-11 mx-xl-auto">
         <h1 class="text-center">{{ .Title | title }}</h1>
-        <p class="lead text-center">Showcase with {{ .Title }} {{ .Data.Singular }}</p>
-        {{ if ne (hugo.Environment) "development" -}}
-        <div class="d-flex justify-content-center">
-            {{ partial "main/carbonads.html" . }}
-        </div>
-        {{ end -}}
+        <p class="lead text-center">
+            Showcase with {{ .Title }} {{ .Data.Singular }}
+        </p>
         <h2>Recent</h2>
         <div class="row row-cols-1 row-cols-md-2 g-5">
             {{ range .Data.Pages.ByWeight.Reverse -}}
-            <div class="col">
-                {{ .Render "showcase-card" -}}
-            </div>
+            <div class="col">{{ .Render "showcase-card" -}}</div>
             {{ end }}
         </div>
     </main>

@@ -1,5 +1,5 @@
 ---
-title: "AnimeEZ"
+title: "Animasi"
 description: "React native App for watching anime built with consumet api"
 lead: "React native App for watching anime built with consumet api"
 date: 2022-09-08T03:11:47+00:00

@@ -68,7 +68,7 @@
     "stylelint": "^14.9",
     "stylelint-config-standard-scss": "^3.0",
     "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^5.0.1"
   },
   "otherDependencies": {
     "hugo": "0.99.0"

@@ -43,7 +43,7 @@
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.18.5",
     "@babel/preset-env": "^7.17",
-    "@fullhuman/postcss-purgecss": "^4.1",
+    "@fullhuman/postcss-purgecss": "^5.0",
     "auto-changelog": "^2.4",
     "autoprefixer": "^10.4",
     "bootstrap": "^5.1",

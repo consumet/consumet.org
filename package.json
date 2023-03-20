@@ -80,6 +80,6 @@
     "mermaid": "^9.1.2",
     "node-sass": "^7.0.1",
     "sass": "^1.53.0",
-    "style-loader": "^3.3.1"
+    "style-loader": "^3.3.2"
   }
 }

@@ -74,7 +74,7 @@
     "hugo": "0.99.0"
   },
   "dependencies": {
-    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-react": "^7.22.5",
     "css-loader": "^6.7.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "mermaid": "^9.1.2",

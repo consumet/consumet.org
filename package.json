@@ -65,7 +65,7 @@
     "purgecss-whitelister": "^2.4",
     "sass-loader": "^13.0.1",
     "shx": "^0.3.4",
-    "stylelint": "^14.9",
+    "stylelint": "^14.16",
     "stylelint-config-standard-scss": "^3.0",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
